@@ -4,6 +4,8 @@ SUBDIRS =  misc-progs misc-modules \
 	   pci usb\
 	   sbull snull short
 
+obj-m := scull.o misc-modules.o
+
 all: subdirs
 
 subdirs:
