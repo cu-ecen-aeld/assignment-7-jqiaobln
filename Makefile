@@ -1,10 +1,5 @@
 
-SUBDIRS =  misc-progs misc-modules \
-           skull scull scullc scullp lddbus sculld scullv shortprint simple tty \
-	   pci usb\
-	   sbull snull short
-
-obj-m := scull.o misc-modules.o
+SUBDIRS =  misc-modules scull
 
 all: subdirs
 
