@@ -32,6 +32,8 @@ modules:
 endif
 
 
+all:
+    $(MAKE) -C $(KERNEL_SRC) M=$(SRC)
 
 clean:
 	rm -rf *.o *~ core .depend .*.cmd *.ko *.mod.c .tmp_versions *.mod modules.order *.symvers
