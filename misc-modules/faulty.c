@@ -67,6 +67,8 @@ int faulty_init(void)
 {
 	int result;
 
+	printk(KERN_ALERT "Faulty driver start from jqiao\n");
+
 	/*
 	 * Register your major, and accept a dynamic number
 	 */
@@ -81,6 +83,7 @@ int faulty_init(void)
 
 void faulty_cleanup(void)
 {
+	printk(KERN_ALERT "Faulty driver stop from jqiao\n");
 	unregister_chrdev(faulty_major, "faulty");
 }
 
